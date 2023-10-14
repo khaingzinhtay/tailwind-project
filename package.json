@@ -5,5 +5,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "vanilla-marquee": "^1.1.2"
   }
 }
