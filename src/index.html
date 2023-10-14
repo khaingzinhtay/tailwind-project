@@ -1,57 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainforest</title>
+    <link rel="stylesheet" href="../dist/output.css" />
     <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="../css/fa.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-    <nav class="bg-[url('/image/11.jpg')] bg-center bg-cover h-[100vh]">
-        <div class="container mx-auto flex justify-between pt-4 bg-slate-50 h-[100px] p-7 items-center rounded-lg ">
-            <a href="#" class="text-green-500 text-3xl capitalize font-semibold">rainforest</a>
-            <div class="navbarLink md:static  md:min-h-fit absolute min-h-[60vh] left-0 top-[-150%] md:w-auto w-full flex md:gap[4vh] items-center px-10">
-                <ul class="flex md:flex-row flex-col gap-[6vw]">
-                    <li><a href="#" class="text-1xl hover:text-green-500">Product</a></li>
-                    <li><a href="#" class="text-1xl hover:text-green-500  ">Developers</a></li>
-                    <li><a href="#" class="text-1xl hover:text-green-500 ">Pricing</a></li>
-                    <li><a href="#" class="text-1xl hover:text-green-500 ">Company</a></li>
-                </ul>
-            </div>
-            <div class="md:hidden text-3xl">
-                <ion-icon name="menu" onclick="onToggleMenu(this)"></ion-icon>
-            </div>
-            <div class="button">
-                <button class="bg-slate-100 py-2 px-4 text-1xl font-medium">Sign In</button>
-                <button class="bg-green-700 py-2 px-4 text-white">Order Now</button>
-            </div>
+    <link rel="stylesheet" href="../css/fa.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-green-50">
+    <nav class="bg-[url('/image/11.jpg')] bg-center bg-cover">
+      <div
+        class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex justify-between bg-slate-50 items-center rounded-b-lg sticky top-0 px-8 py-5 shadow-md navBar"
+      >
+        <a href="#" class="text-green-900 text-2xl font-normal z-10 titleText"
+          >Rainforest</a
+        >
+        <div
+          class="navbarLink md:static hidden md:flex md:min-h-fit absolute min-h-[60vh] left-0 top-[-150%] md:w-auto w-full md:gap-[4vh] items-center px-10"
+        >
+          <ul class="flex md:flex-row flex-col gap-[3vw]">
+            <li>
+              <a href="#" class="text-1xl hover:text-green-600">Product</a>
+            </li>
+            <li>
+              <a href="#" class="text-1xl hover:text-green-600">Developers</a>
+            </li>
+            <li>
+              <a href="#" class="text-1xl hover:text-green-600">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="text-1xl hover:text-green-600">Company</a>
+            </li>
+          </ul>
         </div>
-        <div class="text-white mt-20 ml-20">
-            <h1 class="text-6xl font-medium mb-5">Payment <br> processing for <br> your platform </h1>
-            <p class="text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> In, sit? Ratione, deserunt libero eaque ut repudiandae.</p>
-            <button class="bg-green-400 rounded-md font-semibold  mt-4 py-4 px-6 text-white">Start Now</button>
+        <div class="flex gap-1 z-10">
+          <button
+            class="bg-slate-200 hover:bg-slate-300 py-2 px-4 rounded-lg cursor-pointer"
+          >
+            Sign In
+          </button>
+          <button
+            class="bg-green-600 hover:bg-green-700 py-2 px-4 text-white rounded-lg cursor-pointer"
+          >
+            Start Now
+          </button>
         </div>
+        <div class="md:hidden text-3xl">
+          <ion-icon
+            class="text-green-600 cursor-pointer mt-1"
+            name="menu"
+            onclick="onToggleMenu(this)"
+          ></ion-icon>
+        </div>
+      </div>
+      <div
+        class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto text-white mt-[150px] pb-[150px] backdrop"
+      >
+        <h1 class="text-6xl font-semibold mb-5 leading-[75px]">
+          Payment <br />
+          processing for <br />
+          your platform
+        </h1>
+        <p class="text-xl font-normal">
+          Grow revenue by embedding payments into your product — <br />
+          without taking on risk or compliance headaches.
+        </p>
+        <button
+          class="rounded-lg font-normal mt-6 p-3 px-5 text-white bg-green-600 hover:bg-green-700"
+        >
+          Start Now
+        </button>
+      </div>
     </nav>
-    <div class="container">
-        <div class="w-full min-h-screen pl-6">
-            <h1 class="p-[30px]">Trusted by</h1>
-            <div class="flex flex-wrap gap-10">
-                <div class="p-3 shadow-lg bg-slate- rounded-md me-3">Sample Card</div>
-                <div class="p-3 shadow-lg bg-slate- rounded-md me-3">Sample Card</div>
-            </div>
+    <div class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto mb-[300px]">
+      <h1 class="pt-10 pb-5 text-xl font-semibold text-green-800">
+        Trusted By
+      </h1>
+      <div class="flex justify-center flex-wrap items-center gap-5">
+        <div
+          class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+        >
+          CURAE
         </div>
+        <div
+          class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+        >
+          Payground
+        </div>
+        <div
+          class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+        >
+          QuoteMachine
+        </div>
+        <div
+          class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+        >
+          RoadSync
+        </div>
+        <div
+          class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+        >
+          RoseRocket
+        </div>
+      </div>
     </div>
-        <script>
-            const navLinks = document.querySelector('.navbarLink');
-            function onToggleMenu(e){
-                e.name = e.name === 'menu' ? 'close' : 'menu';
-                navLinks.classList.toggle('top-[10%]')
-            }
-        </script>
-    </body>
-    </html>
+    <script>
+      const navLinks = document.querySelector(".navbarLink");
+      const navBar = document.querySelector(".navBar");
+      const titleText = document.querySelector(".titleText");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("top-[75px]");
+        navLinks.classList.toggle("pt-5");
+        navLinks.classList.toggle("rounded-lg");
+        navLinks.classList.toggle("bg-green-900");
+        navLinks.classList.toggle("min-h-[25vh]");
+        navLinks.classList.toggle("border");
+        navLinks.classList.toggle("border-t-white");
+        navLinks.classList.toggle("text-white");
+        navLinks.classList.toggle("hover:text-slate-200");
+        navBar.classList.toggle("bg-green-900");
+        titleText.classList.toggle("text-green-900");
+        titleText.classList.toggle("text-white");
+      }
+    </script>
+  </body>
+</html>
