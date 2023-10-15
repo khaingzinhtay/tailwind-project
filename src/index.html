@@ -1,239 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainforest</title>
-    <link rel="stylesheet" href="../dist/output.css" />
-    <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="../css/fa.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body class="bg-green-50">
-    <nav class="bg-[url('/image/11.jpg')] bg-center bg-cover">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rainforest</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+  <!-- fontawesome cdn link -->
+  <link rel="stylesheet" href="../css/fa.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</head>
+<body class="bg-green-50">
+  <nav class="bg-[url('/image/11.jpg')] bg-center bg-cover">
+    <div
+    class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex justify-between bg-slate-50 items-center rounded-b-lg sticky top-0 px-8 py-5 shadow-md navBar"
+    >
+    <a href="#" class="text-green-900 text-2xl font-normal z-10 titleText"
+    >Rainforest</a
+    >
+    <div
+    class="navbarLink md:static hidden md:flex md:min-h-fit absolute min-h-[60vh] left-0 top-[-150%] md:w-auto w-full md:gap-[4vh] items-center px-10"
+    >
+    <ul class="flex md:flex-row flex-col gap-[3vw]">
+      <li>
+        <a href="#" class="text-1xl hover:text-green-600">Product</a>
+      </li>
+      <li>
+        <a href="#" class="text-1xl hover:text-green-600">Developers</a>
+      </li>
+      <li>
+        <a href="#" class="text-1xl hover:text-green-600">Pricing</a>
+      </li>
+      <li>
+        <a href="#" class="text-1xl hover:text-green-600">Company</a>
+      </li>
+    </ul>
+  </div>
+  <div class="flex gap-1 z-10">
+    <button
+    class="bg-slate-200 hover:bg-slate-300 py-2 px-4 rounded-lg cursor-pointer"
+    >
+    Sign In
+  </button>
+  <button
+  class="bg-green-600 hover:bg-green-700 py-2 px-4 text-white rounded-lg cursor-pointer"
+  >
+  Start Now
+</button>
+</div>
+<div class="md:hidden text-3xl">
+  <ion-icon
+  class="text-green-600 cursor-pointer mt-1"
+  name="menu"
+  onclick="onToggleMenu(this)"
+  ></ion-icon>
+</div>
+</div>
+<div
+class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto text-white mt-[150px] pb-[150px] backdrop"
+>
+<h1 class="text-4xl font-semibold mb-5 leading-[75px]">
+  Payment <br />
+  processing for <br />
+  your platform
+</h1>
+<p class="text-xl font-normal">
+  Grow revenue by embedding payments into your product — <br />
+  without taking on risk or compliance headaches.
+</p>
+<button
+class="rounded-lg font-normal mt-6 p-3 px-5 text-white bg-green-600 hover:bg-green-700"
+>
+Start Now
+</button>
+</div>
+</nav>
+<div class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
+  <div class="min-h-[250px] py-4">
+    <h1 class="pt-10 pb-5 text-xl font-semibold text-green-800">
+      Trusted By
+    </h1>
+    <div class="flex justify-center flex-wrap items-center gap-5">
       <div
-        class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto flex justify-between bg-slate-50 items-center rounded-b-lg sticky top-0 px-8 py-5 shadow-md navBar"
+      class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
       >
-        <a href="#" class="text-green-900 text-2xl font-normal z-10 titleText"
-          >Rainforest</a
-        >
-        <div
-          class="navbarLink md:static hidden md:flex md:min-h-fit absolute min-h-[60vh] left-0 top-[-150%] md:w-auto w-full md:gap-[4vh] items-center px-10"
-        >
-          <ul class="flex md:flex-row flex-col gap-[3vw]">
-            <li>
-              <a href="#" class="text-1xl hover:text-green-600">Product</a>
-            </li>
-            <li>
-              <a href="#" class="text-1xl hover:text-green-600">Developers</a>
-            </li>
-            <li>
-              <a href="#" class="text-1xl hover:text-green-600">Pricing</a>
-            </li>
-            <li>
-              <a href="#" class="text-1xl hover:text-green-600">Company</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex gap-1 z-10">
-          <button
-            class="bg-slate-200 hover:bg-slate-300 py-2 px-4 rounded-lg cursor-pointer"
-          >
-            Sign In
-          </button>
-          <button
-            class="bg-green-600 hover:bg-green-700 py-2 px-4 text-white rounded-lg cursor-pointer"
-          >
-            Start Now
-          </button>
-        </div>
-        <div class="md:hidden text-3xl">
-          <ion-icon
-            class="text-green-600 cursor-pointer mt-1"
-            name="menu"
-            onclick="onToggleMenu(this)"
-          ></ion-icon>
-        </div>
-      </div>
-      <div
-        class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto text-white mt-[150px] pb-[150px] backdrop"
-      >
-        <h1 class="text-4xl font-semibold mb-5 leading-[75px]">
-          Payment <br />
-          processing for <br />
-          your platform
-        </h1>
-        <p class="text-xl font-normal">
-          Grow revenue by embedding payments into your product — <br />
-          without taking on risk or compliance headaches.
-        </p>
-        <button
-          class="rounded-lg font-normal mt-6 p-3 px-5 text-white bg-green-600 hover:bg-green-700"
-        >
-          Start Now
-        </button>
-      </div>
-    </nav>
-    <div class="container w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
-      <div class="min-h-[250px] py-4">
-        <h1 class="pt-10 pb-5 text-xl font-semibold text-green-800">
-          Trusted By
-        </h1>
-        <div class="flex justify-center flex-wrap items-center gap-5">
-          <div
-            class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
-          >
-            CURAE
-          </div>
-          <div
-            class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
-          >
-            Payground
-          </div>
-          <div
-            class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
-          >
-            QuoteMachine
-          </div>
-          <div
-            class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
-          >
-            RoadSync
-          </div>
-          <div
-            class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
-          >
-            RoseRocket
-          </div>
-        </div>
-      </div>
-      <div class="min-h-[150px] w-full py-4">
-        <h1 class="text-3xl font-semibold text-center leading-[45px]">
-          <span class="text-green-500">Make money move</span>
-          <span class="text-green-900">with <br />robust payment flows</span>
-        </h1>
-      </div>
-      <div
-        class="mainPayment flex w-full bg-emerald-900 p-[20px] lg:p-[50px] rounded-xl"
-      >
-        <div class="hidden md:block w-1/3 mt-auto">
-          <div class="rightPayment flex flex-col">
-            <div class="h-1 bg-green-500 w-[75%] my-4"></div>
-            <span class="text-white text-xl">
-              Facilitate payments <br />
-              from users to your <br />
-              customers.
-            </span>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3">
-          <div class="flex justify-center items-center gap-3 mt-5">
-            <span class="text-white">Accept payments</span>
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input
-                type="checkbox"
-                value=""
-                class="sr-only peer"
-                onclick="onToggleSwitch()"
-              />
-              <div
-                class="w-11 h-6 bg-slate-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 cursor-pointer"
-              ></div>
-            </label>
-            <span class="text-white">Send payments</span>
-          </div>
-          <div>
-            <img
-              class="mt-7 rounded-lg border-[1px] border-slate-100 shadow-lg"
-              src="../image/payment.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="hidden md:block w-1/3 mt-auto">
-          <div class="leftPayment hidden flex-col ps-5">
-            <div class="h-1 bg-white w-[75%] my-4"></div>
-            <span class="text-white text-xl">
-              Facilitate payments <br />
-              from users to your <br />
-              customers.
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="min-h-[260px] w-full flex flex-col justify-center items-center">
-        <h1 class="text-lg text-green-800 font-normal text-center leading-[28px] max-w-[700px]">
-          With Rainforest, you can make money flow through your platform in more ways than one. Use a single provider for cards, ACH, faster payments, next-day funding, and more.
-        </h1>
-        <button class="bg-green-500 rounded-lg text-white py-3 px-5 mt-5">Meet the product</button>
-      </div>
-      <!-- end paymnet section  -->
-      <div class="bg-orange-50 rounded-xl">
-        <p class="text-center pt-[75px]">
-          COMPONENT STUDIO
-        </p>
-        <h1 class="text-3xl font-normal text-center leading-[40px] mt-5">
-          <span class="text-green-500">Build faster</span>
-          <span class="text-green-900">with configurable, <br />low-code components </span>
-        </h1>
-        <p class="text-center max-w-[700px] mx-auto mt-5">
-          Start processing payments in days, not months. Reduce development time and get to revenue faster with our pre-built, embeddable components for payments, reporting, chargebacks, merchant onboarding, and more.
-        </p>
-        <p class="text-center max-w-[700px] mx-auto mt-5 flex justify-center items-center">
-          Discover more <ion-icon name="arrow-forward-circle-outline" class="text-green-600 ms-2 text-2xl"></ion-icon>
-        </p>
-        <div class="marquee flex overflow-hidden py-10 gap-5">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment1.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/Payment-methods.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/main-chart.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/By-status.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment1.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/Payment-methods.svg" alt="">
-          <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment.svg" alt="">
-        </div>
-      </div>
-
+      CURAE
     </div>
-    <script>
-      const navLinks = document.querySelector(".navbarLink");
-      const navBar = document.querySelector(".navBar");
-      const titleText = document.querySelector(".titleText");
-      function onToggleMenu(e) {
-        e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("hidden");
-        navLinks.classList.toggle("top-[75px]");
-        navLinks.classList.toggle("pt-5");
-        navLinks.classList.toggle("rounded-lg");
-        navLinks.classList.toggle("bg-green-900");
-        navLinks.classList.toggle("min-h-[25vh]");
-        navLinks.classList.toggle("border");
-        navLinks.classList.toggle("border-t-white");
-        navLinks.classList.toggle("text-white");
-        navLinks.classList.toggle("hover:text-slate-200");
-        navBar.classList.toggle("bg-slate-50");
-        navBar.classList.toggle("bg-green-900");
-        titleText.classList.toggle("text-green-900");
-        titleText.classList.toggle("text-white");
-      }
-      const mainPayment = document.querySelector(".mainPayment");
-      const leftPayment = document.querySelector(".leftPayment");
-      const rightPayment = document.querySelector(".rightPayment");
+    <div
+    class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+    >
+    Payground
+  </div>
+  <div
+  class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+  >
+  QuoteMachine
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+RoadSync
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+RoseRocket
+</div>
+</div>
+</div>
+<div class="min-h-[150px] w-full py-4">
+  <h1 class="text-3xl font-semibold text-center leading-[45px]">
+    <span class="text-green-500">Make money move</span>
+    <span class="text-green-900">with <br />robust payment flows</span>
+  </h1>
+</div>
+<div
+class="mainPayment flex w-full bg-emerald-900 p-[20px] lg:p-[50px] rounded-xl"
+>
+<div class="hidden md:block w-1/3 mt-auto">
+  <div class="rightPayment flex flex-col">
+    <div class="h-1 bg-green-500 w-[75%] my-4"></div>
+    <span class="text-white text-xl">
+      Facilitate payments <br />
+      from users to your <br />
+      customers.
+    </span>
+  </div>
+</div>
+<div class="w-full md:w-1/3">
+  <div class="flex justify-center items-center gap-3 mt-5">
+    <span class="text-white">Accept payments</span>
+    <label class="relative inline-flex items-center cursor-pointer">
+      <input
+      type="checkbox"
+      value=""
+      class="sr-only peer"
+      onclick="onToggleSwitch()"
+      />
+      <div
+      class="w-11 h-6 bg-slate-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 cursor-pointer"
+      ></div>
+    </label>
+    <span class="text-white">Send payments</span>
+  </div>
+  <div>
+    <img
+    class="mt-7 rounded-lg border-[1px] border-slate-100 shadow-lg"
+    src="../image/payment.png"
+    alt=""
+    />
+  </div>
+</div>
+<div class="hidden md:block w-1/3 mt-auto">
+  <div class="leftPayment hidden flex-col ps-5">
+    <div class="h-1 bg-white w-[75%] my-4"></div>
+    <span class="text-white text-xl">
+      Facilitate payments <br />
+      from users to your <br />
+      customers.
+    </span>
+  </div>
+</div>
+</div>
+<div class="min-h-[260px] w-full flex flex-col justify-center items-center">
+  <h1 class="text-lg text-green-800 font-normal text-center leading-[28px] max-w-[700px]">
+    With Rainforest, you can make money flow through your platform in more ways than one. Use a single provider for cards, ACH, faster payments, next-day funding, and more.
+  </h1>
+  <button class="bg-green-500 rounded-lg text-white py-3 px-5 mt-5">Meet the product</button>
+</div>
+<!-- end paymnet section  -->
+<div class="bg-orange-50 rounded-xl">
+  <p class="text-center pt-[75px]">
+    COMPONENT STUDIO
+  </p>
+  <h1 class="text-3xl font-normal text-center leading-[40px] mt-5">
+    <span class="text-green-500">Build faster</span>
+    <span class="text-green-900">with configurable, <br />low-code components </span>
+  </h1>
+  <p class="text-center max-w-[700px] mx-auto mt-5">
+    Start processing payments in days, not months. Reduce development time and get to revenue faster with our pre-built, embeddable components for payments, reporting, chargebacks, merchant onboarding, and more.
+  </p>
+  <p class="text-center max-w-[700px] mx-auto mt-5 flex justify-center items-center">
+    Discover more <ion-icon name="arrow-forward-circle-outline" class="text-green-600 ms-2 text-2xl"></ion-icon>
+  </p>
+  <div class="marquee flex overflow-hidden py-10 gap-5">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment1.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/Payment-methods.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/main-chart.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/By-status.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment1.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/Payment-methods.svg" alt="">
+    <img src="https://rainforestpay.wpengine.com/wp-content/uploads/2023/01/ACH-Payment.svg" alt="">
+  </div>
+</div>
 
-      function onToggleSwitch(e) {
-        mainPayment.classList.toggle("bg-orange-600");
-        rightPayment.classList.toggle("hidden");
-        leftPayment.classList.toggle("hidden");
-      }
-    </script>
-    <script src="./js/marquee.js"></script>
-  </body>
+</div>
+<div class="about bg-green-300 w-[100%] h-[600px] p-10">
+  <div class="flex md:flex-row">
+    <div class="p-3 500px">
+      <h1 class="text-3xl md:text-xl font-bold pb-30">BUILT BY DEVELOPERS FOR DEVELOPERS</h1>
+      <h1 class="mt-7 text-4xl">A developer experience that over-delivers</h1>
+      <p class="leading-[90px] mt-5 text-xl">With a robust API, Rainforest offers everything developers need to embed payments processing into their platform.<br> Detailed guides and walkthroughs, full end-to-end sandbox testing, realtime API logs, and more.</p>
+      <p class="text-center max-w-[700px] mt-5 flex">
+        Learn more <ion-icon name="arrow-forward-circle-outline" class="text-green-600 ms-2 text-2xl"></ion-icon>
+      </p>
+    </div>
+    <div class="500px">
+      <img src="../image/code.png" class="w-[500px]">
+    </div>
+  </div>
+</div>
+<div class="container mt-10">
+  <h1 class="text-4xl text-center text-green-500" style="margin: 40px;">All the features you need to <br> build better payments </h1>
+  <div class="flex justify-center text-center flex-wrap gap-5" style="margin-left: 20px;">
+    <div
+    class="shadow-md hover:shadow-lg  bg-white rounded-lg cursor-pointer hover:text-green-900 w-[300px]"
+    >
+    <img src="../image/Market@4x-1.avif" alt="" srcset="">
+    <p class="p-5 mb-5">Real-time merchant onboarding</p>
+  </div>
+  <div
+  class="shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900 w-[300px]"
+  >
+  <img src="../image/Market@4x-1.avif" alt="" srcset="">
+  <p class="p-5 mb-5">Real-time merchant onboarding</p>
+</div>
+<div
+class="shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900 w-[300px]"
+>
+<img src="../image/Market@4x-1.avif" alt="" srcset="">
+<p class="p-5 mb-5">Real-time merchant onboarding</p>
+</div>
+<div
+class="shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900 w-[300px]"
+>
+<img src="../image/Market@4x-1.avif" alt="" srcset="">
+<p class="p-5 mb-5">Real-time merchant onboarding</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cotainer mt-[30px]">
+  <div class="text-center">
+    <h1 class=" text-4xl text-green-500" style="margin: 30px;">Watch your business bloom and grow</h1>
+    <p>Use our revenue calculator to learn how much you could grow <br> by adding payments processing to your platform.</p>
+    <p class="text-center max-w-[700px] mx-auto mt-5 flex justify-center items-center">
+      Calculate growth <ion-icon name="arrow-forward-circle-outline" class="text-green-600 ms-2 text-2xl"></ion-icon>
+    </p>
+  </div>
+</div>
+<div>
+  <h1 style="margin-left: 70px; padding: 20px;">Our Investors</h1>
+  <div class="flex justify-center flex-wrap items-center gap-5">
+    <div
+    class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+    >
+    CURAE
+  </div>
+  <div
+  class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+  >
+  Payground
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+QuoteMachine
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+RoadSync
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+RoseRocket
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+RoseRocket
+</div>
+<div
+class="p-6 px-10 shadow-md hover:shadow-lg bg-white rounded-lg cursor-pointer hover:text-green-900"
+>
+RoseRocket
+</div>
+</div>
+</div>
+<div>
+  <div class="center text-center bg-green-900">
+    <h1 class="text-6xl text-green-500" style="margin-top: 30px; padding-top: 20px;">Get started today. <br> Boost revenue with Rainforest </h1>
+    <button
+    class="rounded-lg font-normal mt-6 p-3 px-5 text-white bg-green-600 hover:bg-green-700"
+    >
+    Start Now
+  </button>
+  </div>
+<script>
+  const navLinks = document.querySelector(".navbarLink");
+  const navBar = document.querySelector(".navBar");
+  const titleText = document.querySelector(".titleText");
+  function onToggleMenu(e) {
+    e.name = e.name === "menu" ? "close" : "menu";
+    navLinks.classList.toggle("hidden");
+    navLinks.classList.toggle("top-[75px]");
+    navLinks.classList.toggle("pt-5");
+    navLinks.classList.toggle("rounded-lg");
+    navLinks.classList.toggle("bg-green-900");
+    navLinks.classList.toggle("min-h-[25vh]");
+    navLinks.classList.toggle("border");
+    navLinks.classList.toggle("border-t-white");
+    navLinks.classList.toggle("text-white");
+    navLinks.classList.toggle("hover:text-slate-200");
+    navBar.classList.toggle("bg-slate-50");
+    navBar.classList.toggle("bg-green-900");
+    titleText.classList.toggle("text-green-900");
+    titleText.classList.toggle("text-white");
+  }
+  const mainPayment = document.querySelector(".mainPayment");
+  const leftPayment = document.querySelector(".leftPayment");
+  const rightPayment = document.querySelector(".rightPayment");
+  
+  function onToggleSwitch(e) {
+    mainPayment.classList.toggle("bg-orange-600");
+    rightPayment.classList.toggle("hidden");
+    leftPayment.classList.toggle("hidden");
+  }
+</script>
+<script src="./js/marquee.js"></script>
+</body>
 </html>
